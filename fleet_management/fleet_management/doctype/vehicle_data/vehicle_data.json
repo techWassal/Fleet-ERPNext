@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plate_number",
+ "creation": "2025-06-12 13:20:24.484624",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle_info_section",
+  "plate_number",
+  "plate_type",
+  "vehicle_status",
+  "branch_name",
+  "vehicle_maker",
+  "vehicle_model",
+  "model_year",
+  "sequence_number",
+  "chassis_number",
+  "major_color",
+  "body_type",
+  "column_break_uhvx",
+  "actual_driver_id",
+  "actual_driver_name",
+  "license_expiry_date",
+  "inspection_expiry_date",
+  "istemarah_issue_date",
+  "ownership_date",
+  "vehicle_status2",
+  "mvpi_status",
+  "insurance_status",
+  "restriction_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle_info_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Info"
+  },
+  {
+   "fieldname": "plate_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plate Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "plate_type",
+   "fieldtype": "Data",
+   "label": "Plate Type"
+  },
+  {
+   "fieldname": "vehicle_status",
+   "fieldtype": "Data",
+   "label": "Vehicle Status"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "vehicle_maker",
+   "fieldtype": "Data",
+   "label": "Vehicle Maker"
+  },
+  {
+   "fieldname": "vehicle_model",
+   "fieldtype": "Data",
+   "label": "Vehicle Model"
+  },
+  {
+   "fieldname": "model_year",
+   "fieldtype": "Data",
+   "label": "Model Year"
+  },
+  {
+   "fieldname": "sequence_number",
+   "fieldtype": "Data",
+   "label": "Sequence Number"
+  },
+  {
+   "fieldname": "chassis_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Chassis Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "major_color",
+   "fieldtype": "Data",
+   "label": "Major Color"
+  },
+  {
+   "fieldname": "body_type",
+   "fieldtype": "Data",
+   "label": "Body Type"
+  },
+  {
+   "fieldname": "column_break_uhvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_driver_id",
+   "fieldtype": "Data",
+   "label": "Actual Driver Id"
+  },
+  {
+   "fieldname": "actual_driver_name",
+   "fieldtype": "Data",
+   "label": "Actual Driver Name"
+  },
+  {
+   "fieldname": "license_expiry_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "License Expiry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inspection_expiry_date",
+   "fieldtype": "Data",
+   "label": "Inspection Expiry Date"
+  },
+  {
+   "fieldname": "istemarah_issue_date",
+   "fieldtype": "Data",
+   "label": "Istemarah issue Date"
+  },
+  {
+   "fieldname": "ownership_date",
+   "fieldtype": "Data",
+   "label": "Ownership Date"
+  },
+  {
+   "fieldname": "vehicle_status2",
+   "fieldtype": "Data",
+   "label": "Vehicle Status"
+  },
+  {
+   "fieldname": "mvpi_status",
+   "fieldtype": "Data",
+   "label": "MVPI Status"
+  },
+  {
+   "fieldname": "insurance_status",
+   "fieldtype": "Data",
+   "label": "Insurance Status"
+  },
+  {
+   "fieldname": "restriction_status",
+   "fieldtype": "Data",
+   "label": "Restriction Status"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-18 15:33:14.750870",
+ "modified_by": "Administrator",
+ "module": "Fleet Management",
+ "name": "Vehicle Data",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

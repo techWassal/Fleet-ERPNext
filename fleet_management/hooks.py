@@ -5,6 +5,22 @@ app_description = "App for maintaining Fleet"
 app_email = "jayesh.patil@techonsy.com"
 app_license = "mit"
 
+# Event hook for Traccar 
+doc_events = {
+    "Company": {
+        "after_rename": "fleet_management.custom.company_hooks.traccar_group_rename",
+        "after_insert": "fleet_management.custom.company_hooks.traccar_group_create"
+    },
+    "Employee": {
+        "after_insert": "fleet_management.custom.create_traccar_device.create_traccar_device"
+    },
+    "User": {
+        "after_insert": "fleet_management.custom.create_user_traccar.create_traccar_user",
+        "on_trash": "fleet_management.custom.create_user_traccar.delete_traccar_user"
+    }
+}
+
+
 # Apps
 # ------------------
 
